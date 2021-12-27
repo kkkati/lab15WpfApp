@@ -1,0 +1,155 @@
+﻿<Window x:Class="lab15WpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab15WpfApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <FlowDocumentScrollViewer x:Name="docViewer" SelectionBrush="#FF0C4572">
+            <FlowDocument>
+                <Paragraph FontWeight="Bold">
+                    <Floater HorizontalAlignment="Right" Width="250">
+                        <BlockUIContainer>
+                            <Image UseLayoutRounding="True" d:DesignUseLayoutRounding="True">
+                                <Image.Source>
+                                    <BitmapImage CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="D:\Kate\Катя\моя\VisualStudia\MyProject\WPF\lab15WpfApp\lab15WpfApp\Data\1.jpg"/>
+                                </Image.Source>
+                            </Image>
+                        </BlockUIContainer>
+                    </Floater>
+                    <Run Text=" Как подготовиться к котенку?"/>
+                </Paragraph>
+                <Paragraph>
+                    <Run Text="К сожалению, немногие будущие владельцы спрашивают себя об этом, а зря. Ведь первые месяцы жизни котенка – самые важные, от них зависит будущее здоровье и поведение взрослого животного, а от первых дней в новом доме – ваши взаимоотношения с питомцем."/>
+                </Paragraph>
+                <Paragraph>
+                    <Run Text="самом деле, первое, что вы должны сделать, желательно, еще до того, как начнете искать подходящего котенка, это внимательно изучить основы ухода за кошкой. Для краткого ликбеза мы рекомендуем следующие статьи:"/>
+                </Paragraph>
+                <List BorderBrush="#FF66DFF9" BorderThickness="2" Foreground="#FF17324D" MarkerStyle="Box">
+                    <ListItem>
+                        <Paragraph>
+                            <Hyperlink NavigateUri="http://pochemukot.ru/o-kotyatah/v-kakom-vozraste-brat-kotenka">
+                                <Run Text="В каком возрасте брать "/>
+                                <Run Text="котенка"/>
+                                <Run Text="?"/>
+                            </Hyperlink>
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            <Hyperlink NavigateUri="http://pochemukot.ru/pitanie-koshki/chem-kormit-koshku">
+                                <Run Text="Чем кормить кошку?"/>
+                            </Hyperlink>
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            <Hyperlink NavigateUri="http://pochemukot.ru/pitanie-koshki/chem-nelzya-kormit-koshku">
+                                <Run Text="Чем нельзя кормить кошку?"/>
+                            </Hyperlink>
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            <Hyperlink NavigateUri="http://pochemukot.ru/zdorove-koshki/techka-vyazka-beremennost-i-rody-u-koshek/kastrirovat-li-kota">
+                                <Run Text="Стерилизовать ли кошку?/Кастрировать ли кота?"/>
+                            </Hyperlink>
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            <Hyperlink NavigateUri="http://pochemukot.ru/zdorove-koshki/privivki-kotyatam-i-koshkam/kogda-delat-privivki-kotyatam">
+                                <Run Text="Когда делать прививки котятам?"/>
+                            </Hyperlink>
+                        </Paragraph>
+                    </ListItem>
+                </List>
+                <Paragraph FontWeight="Bold">
+                    <Run Text="Как подготовить дом к котенку?"/>
+                </Paragraph>
+                <Table>
+                    <Table.Columns>
+                        <TableColumn Width="0.25*"/>
+                        <TableColumn Width="*"/>
+                    </Table.Columns>
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    <Run Text="№ этапа"/>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    <Run Text="Описание этапа"/>
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    <Run Text="1"/>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    <Run Text="Ели ваше предыдущее животное умерло от инфекционного или неизвестного заболевания, следует воздержаться от приобретения котенка в течение года, брать только привитого котенка, а перед тем как новый жилец приедет - дополнительно обработать квартиру (проконсультируйтесь с ветеринаром)."/>
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    <Run Text="2"/>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    <Run Text="Расспросите заводчика\приют\хозяев о предпочтениях и особенностях котенка (наполнитель, корм, лоток, перенесенные заболевания, аллергии, наличие прививок и обработок и т.д.)."/>
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    <Run Text="3"/>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    <Run Text="Закупите все необходимое для котенка по списку, который мы приводим в нашей статье "/>
+                                    <Hyperlink FontStyle="Italic" NavigateUri="http://pochemukot.ru/o-kotyatah/chto-neobhodimo-kotenku">
+                                        <Run Text="«Что необходимо котенку?»"/>
+                                    </Hyperlink>
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    <Run Text="4"/>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    <Run Text="Определите комнаты\помещения, куда котенку вход будет заказан (аллергикам нельзя пускать животное в спальню), обеспечьте плотное закрытие дверей в эти помещения."/>
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+                </Table>
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <Button Content="Открыть" Width="100" Click="Button_Click_2"/>
+            <Button Content="Сохранить" Width="100" Click="Button_Click_1"/>
+            <Button Content="Очистить" Width="100" Click="Button_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
